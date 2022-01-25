@@ -1,0 +1,45 @@
+@import '../../sass/variables.scss';
+
+.layout {
+  background-color: $main-bg;
+  color: $main-text;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}
+
+.mainSection {
+  flex: 1 1 auto;
+}
+
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 100px;
+}
+
+.connectMessage {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+
+  &InnerContainer {
+    background-color: $secondary-bg;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &Title {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1354px) {
+  .mainContent {
+    padding: 40px 20px;
+  }
+}

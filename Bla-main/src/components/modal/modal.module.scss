@@ -1,0 +1,43 @@
+@import '../../sass/variables.scss';
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  display: flex;
+  overflow-y: scroll;
+  padding: 60px 0;
+}
+
+.content {
+  position: relative;
+  color: $main-text;
+  background-color: $main-bg;
+  -webkit-overflow-scrolling: touch;
+  border: none;
+  outline: none;
+  overflow: visible;
+  z-index: 10000;
+  padding: 0;
+  inset: auto;
+  max-width: 1050px;
+  margin: auto;
+  padding: 20px;
+}
+
+.closeModalButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%, -100%);
+}
+
+@media (max-width: $large-width) {
+  .closeModalButton {
+    transform: translate(0, -100%);
+  }
+}

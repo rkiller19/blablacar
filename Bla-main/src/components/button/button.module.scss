@@ -1,0 +1,28 @@
+@import '../../sass/variables.scss';
+
+.button {
+  background-color: $main-bg;
+  border: 1px solid $red;
+  border-radius: 4px;
+  padding: 10px 18px;
+  color: $main-text;
+  transition: 0.3s all;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+
+  &:hover {
+    background-color: $red;
+  }
+
+  &Disabled {
+    border: none;
+    background-color: $light-bg;
+    color: $light-text;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $light-bg;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "1": {
+    "blockExplorer": "https://etherscan.io/tx/",
+    "name": "Mainnet",
+    "fixedStakingContracts": [
+      {
+        "address": "0xff6d784d5938cb3980dce79bbacec53987d527d8",
+        "APY": "20.2705"
+      },
+      {
+        "address": "0x63aE7Ad4BC155561442207bB4a89a3FD697068D1",
+        "APY": "30.2260"
+      },
+      {
+        "address": "0xa295338aB1a4A648D3578Da6940acfdEEFFD9B6F",
+        "APY": "52.0807"
+      }
+    ],
+    "tokenContract": "0xCE3f6f6672616c39D8B6858F8DAC9902eCa42C84",
+    "bridgeContract": "0xFF01b75f2c155dBDA36E68eB6557DEE8d36D6A99",
+    "params": {
+      "chainId": "0x1"
+    }
+  },
+  "137": {
+    "blockExplorer": "https://polygonscan.com/tx/",
+    "name": "Polygon",
+    "fixedStakingContracts": [
+      {
+        "address": "0xff6D784D5938CB3980Dce79BbAcEc53987D527d8",
+        "APY": "20.2705"
+      },
+      {
+        "address": "0x63aE7Ad4BC155561442207bB4a89a3FD697068D1",
+        "APY": "30.2260"
+      },
+      {
+        "address": "0xa295338aB1a4A648D3578Da6940acfdEEFFD9B6F",
+        "APY": "52.0807"
+      }
+    ],
+    "tokenContract": "0x3c5D1617C30BA71972adD4b0C9A6B9848f2afeeD",
+    "params": {
+      "chainId": "0x89",
+      "chainName": "Polygon",
+      "nativeCurrency": {
+        "name": "MATIC",
+        "symbol": "ETH",
+        "decimals": 18
+      },
+      "rpcUrls": ["https://rpc-mainnet.maticvigil.com"],
+      "blockExplorerUrls": ["https://polygonscan.com"]
+    }
+  },
+  "250": {
+    "blockExplorer": "https://ftmscan.com/",
+    "name": "Fantom Opera",
+    "fixedStakingContracts": [
+      {
+        "address": "0x0f9528dd350Fc5c9BAD09093d437DD7934782135",
+        "APY": "20.2705"
+      },
+      {
+        "address": "0xdc22d8dC05a81F8D619ECe474a8ee4fbd3aDb8B8",
+        "APY": "30.2260"
+      },
+      {
+        "address": "0x0316C84222Ec8DC1A1Ab95ba3585db37c7d6ddF8",
+        "APY": "52.0807"
+      }
+    ],
+    "tokenContract": "0xB367f8047B3a6cd1C4b5D5BFd4797097Fa812667",
+    "params": {
+      "chainId": "250",
+      "chainName": "Fantom Opera",
+      "nativeCurrency": {
+        "name": "FTM",
+        "symbol": "FTM",
+        "decimals": 18
+      },
+      "rpcUrls": ["https://rpc.ftm.tools/"],
+      "blockExplorerUrls": ["https://ftmscan.com/"]
+    }
+  }
+}

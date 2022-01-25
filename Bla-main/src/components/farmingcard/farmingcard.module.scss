@@ -1,0 +1,202 @@
+@import '../../sass/variables.scss';
+
+.card {
+  &Wrapper {
+    width: 49%;
+    margin-bottom: 35px;
+  }
+
+  position: relative;
+  box-shadow: 0px 5px 20px rgba(37, 37, 37, 0.05);
+  border-radius: 10px;
+  background-color: $secondary-bg;
+  padding: 24px 20px;
+
+  &Head {
+    display: flex;
+    align-items: center;
+
+    &Logo {
+      padding: 17px;
+      border: 1px solid $light-text;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 65px;
+      }
+    }
+  }
+
+  &Label {
+    color: $light-text;
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+
+  &InfoText {
+    color: $main-text;
+    font-size: 13px;
+  }
+
+  &Name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 16px;
+
+    &Text {
+      font-size: 17px;
+      display: flex;
+    }
+  }
+
+  &StakingConditions {
+    margin: 16px 0;
+    background-color: $light-bg;
+    border-radius: 4px;
+    padding: 15px 20px;
+    display: flex;
+
+    &Item {
+      padding: 0 18px;
+      border-left: 1px solid $main-text;
+
+      &:first-child {
+        padding-left: 0;
+        border-left: none;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &Staking {
+    &Item {
+      &Head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      &Info {
+        display: flex;
+
+        &Block {
+          margin-right: 20px;
+        }
+      }
+
+      &Buttons {
+        display: flex;
+
+        button {
+          margin-right: 8px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $light-bg;
+    margin-top: 20px;
+    padding-top: 28px;
+  }
+
+  &TatalStaked {
+    &Value {
+      color: $red;
+      font-size: 21px;
+    }
+  }
+
+  &Button {
+    padding: 10px;
+    min-width: 80px;
+  }
+}
+
+.externalLink {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+
+  &Img {
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: $large-width) {
+  .card {
+    &Wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $medium-width) {
+  .card {
+    &Head {
+      &Logo {
+        img {
+          width: 50px;
+        }
+      }
+    }
+
+    &Name {
+      &Text {
+        font-size: 15px;
+      }
+    }
+
+    &Staking {
+      &Item {
+        &Head {
+          flex-direction: column;
+        }
+
+        &Info {
+          width: 100%;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+
+        &Buttons {
+          width: 100%;
+          justify-content: flex-end;
+        }
+      }
+
+      &Conditions {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px;
+
+        &Item {
+          flex: 0 0 40%;
+          border: none;
+          padding: 0;
+          margin: 5px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .stakeModal {
+    width: 240px;
+  }
+}

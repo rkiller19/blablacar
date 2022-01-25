@@ -1,0 +1,98 @@
+@import '../../sass/variables.scss';
+
+.connectionStatus {
+  display: flex;
+  align-items: center;
+}
+.walletIcon {
+  margin-right: 12px;
+}
+.accountAddress {
+  margin-right: 24px;
+
+  &Block {
+    display: flex;
+    align-items: center;
+  }
+}
+.connectButton {
+  color: $light-text;
+
+  &:hover {
+    color: $main-text;
+  }
+}
+
+.disconnectButton {
+  background-color: $red;
+  margin-top: 15px;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.networksMenu {
+  border: 1px solid $light-bg;
+  border-radius: 10px;
+  background-color: $secondary-bg;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 10px));
+  min-width: 100%;
+  max-width: none;
+  white-space: nowrap;
+  z-index: 11;
+
+  &Hidden {
+    display: none;
+  }
+
+  &List {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Wrapper {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  &Button {
+    margin-top: 10px;
+  }
+
+  &Arrow {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: $medium-width) {
+  .connectionStatus {
+    flex-direction: column;
+  }
+
+  .accountAddress {
+    font-size: 11px;
+    margin-right: 0;
+
+    &Block {
+      display: flex;
+      align-items: center;
+      order: 2;
+      margin-top: 10px;
+    }
+  }
+
+  .connectButton {
+    order: 1;
+  }
+
+  .networksMenu {
+    &Wrapper {
+      margin-right: 0;
+    }
+  }
+}

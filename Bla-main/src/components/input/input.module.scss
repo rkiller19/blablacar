@@ -1,0 +1,9 @@
+@import '../../sass/variables.scss';
+
+.input {
+  background-color: $secondary-bg;
+  border: 1px solid $light-bg;
+  border-radius: 4px;
+  color: $light-text;
+  padding: 10px;
+}

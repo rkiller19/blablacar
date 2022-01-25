@@ -1,0 +1,47 @@
+@import '../../sass/variables.scss';
+
+.header {
+  height: $navbar-height;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+
+  &LeftSide {
+    display: flex;
+    align-items: center;
+  }
+
+  &BurgerButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $medium-width) {
+  .header {
+    padding: 0 20px;
+
+    &BurgerButton {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      border: none;
+      margin-right: 5px;
+      color: $light-text;
+      border-radius: 4px;
+      padding: 6px;
+
+      span {
+        width: 25px;
+        height: 2px;
+        background-color: $light-text;
+        margin-bottom: 6px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

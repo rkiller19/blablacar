@@ -1,0 +1,127 @@
+@import '../../sass/variables.scss';
+
+.Bridge {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  &Title {
+    margin-bottom: 20px;
+  }
+
+  &Button {
+    margin-bottom: 10px;
+  }
+
+  &Card {
+    box-shadow: 0px 5px 20px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    background-color: $secondary-bg;
+    padding: 20px 20px 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+
+    &Col {
+      flex: 0 0 50%;
+
+      &:nth-child(odd) {
+        padding-right: 15px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 15px;
+      }
+    }
+
+    &Label {
+      margin-bottom: 10px;
+
+      &Name {
+        font-weight: bold;
+      }
+
+      &Value {
+        color: $light-text;
+        font-size: 14px;
+      }
+    }
+
+    &Networks {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    &Network {
+      flex: 0 0 50%;
+      border-radius: 4px;
+
+      &:nth-child(odd) {
+        padding-right: 5px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 5px;
+      }
+
+      &Value {
+        padding: 10px;
+        border-radius: 4px;
+        background-color: $light-bg;
+        text-align: center;
+      }
+    }
+  }
+
+  &Input {
+    width: 100%;
+
+    &Error {
+      border-color: $red;
+    }
+
+    &Container {
+      position: relative;
+    }
+  }
+}
+
+.ErrorMessage {
+  color: $red;
+  font-size: 12px;
+  position: absolute;
+  padding-top: 5px;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+
+@media screen and (max-width: $small-width) {
+  .Bridge {
+    &Card {
+      flex-wrap: wrap;
+
+      &Col {
+        flex: 0 0 100%;
+
+        &:nth-child(odd) {
+          padding-right: 0;
+        }
+
+        &:nth-child(even) {
+          padding-left: 0;
+        }
+      }
+    }
+
+    &Input {
+      &Container {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
