@@ -57,8 +57,8 @@
     "name": "Fantom Opera",
     "fixedStakingContracts": [
       {
-        "address": "0x0f9528dd350Fc5c9BAD09093d437DD7934782135",
-        "APY": "20.2705"
+        "address": "0xD9F28BdAc3a2B8d244eAd45A6cD59C0AB104285A",
+        "APY": "30"
       },
       {
         "address": "0xdc22d8dC05a81F8D619ECe474a8ee4fbd3aDb8B8",
@@ -69,7 +69,7 @@
         "APY": "52.0807"
       }
     ],
-    "tokenContract": "0xB367f8047B3a6cd1C4b5D5BFd4797097Fa812667",
+    "tokenContract": "0xA63EB9534E428A3Ab8DDc73a3e21a9018Ea0e85C",
     "params": {
       "chainId": "250",
       "chainName": "Fantom Opera",
